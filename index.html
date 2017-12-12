@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html>
-    <head><title>aca</title>
-        <!--http://www.lawebdelprogramador.com/-->
-        <meta charset="utf-8" />
-      
-    </head>
- 
-    <body>
-     <script type="text/javascript">
-         
-          console.log("11111111111 "+window.location.href);
-           alert("11111111111 "+window.location.href);
-     </script>
-    </body>
+<body>
+
+<h2>JavaScript Confirm Box</h2>
+
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var txt;
+    if (confirm("Press a button!") == true) {
+        txt = "You pressed OK!";
+    } else if(confirm("Press a button!") == false) {
+        txt = "You pressed Cancel!";
+    }else{
+    
+    alert(111111);
+    }
+    document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+</body>
 </html>
